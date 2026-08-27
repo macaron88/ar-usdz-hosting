@@ -1,0 +1,227 @@
+<title>現調スキャン図面化ランキング</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F5F6F4; --surface:#FFFFFF; --surface-2:#EDEFEC;
+  --ink:#1A1D21; --ink-2:#4A5058; --ink-3:#767D86;
+  --rule:#D7DAD5; --rule-strong:#B6BBB4;
+  --accent:#2B4C7E; --accent-soft:#E3E9F2; --accent-ink:#1E3A63;
+  --pass:#3B7A57; --pass-bg:#E4EFE8;
+  --fail:#9E3B2E; --fail-bg:#F5E4E1;
+  --wait:#8A6B18; --wait-bg:#F3EBD8;
+  --shadow:0 1px 2px rgba(26,29,33,.06),0 8px 24px -16px rgba(26,29,33,.28);
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --body:"Noto Sans JP",system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --display:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171A; --surface:#1B1F23; --surface-2:#232830;
+    --ink:#E8EAE7; --ink-2:#AEB4BC; --ink-3:#7C848E;
+    --rule:#2E343B; --rule-strong:#454C55;
+    --accent:#8DAFE0; --accent-soft:#1F2A3A; --accent-ink:#B9CDEC;
+    --pass:#7CBE96; --pass-bg:#1C2A22;
+    --fail:#E0917F; --fail-bg:#2E1F1C;
+    --wait:#D8B860; --wait-bg:#2B2415;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171A; --surface:#1B1F23; --surface-2:#232830;
+  --ink:#E8EAE7; --ink-2:#AEB4BC; --ink-3:#7C848E;
+  --rule:#2E343B; --rule-strong:#454C55;
+  --accent:#8DAFE0; --accent-soft:#1F2A3A; --accent-ink:#B9CDEC;
+  --pass:#7CBE96; --pass-bg:#1C2A22;
+  --fail:#E0917F; --fail-bg:#2E1F1C;
+  --wait:#D8B860; --wait-bg:#2B2415;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--body); font-size:16px; line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px 96px}
+.col{max-width:70ch}
+
+h1,h2,h3{font-family:var(--display); text-wrap:balance; line-height:1.35; margin:0}
+h1{font-size:clamp(30px,5.2vw,46px); font-weight:700; letter-spacing:.01em}
+h2{font-size:clamp(21px,2.9vw,27px); font-weight:700}
+h3{font-size:17px; font-weight:600}
+p{margin:0}
+
+.eyebrow{
+  font-family:var(--mono); font-size:11px; font-weight:500;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--ink-3);
+}
+
+/* ---- masthead ---- */
+header.mast{
+  border-bottom:1px solid var(--rule-strong);
+  padding:56px 0 30px; display:flex; flex-direction:column; gap:18px;
+}
+.mast .col{display:flex; flex-direction:column; gap:14px}
+.mast .lede{color:var(--ink-2); font-size:15.5px}
+.meta-strip{
+  display:flex; flex-wrap:wrap; gap:10px 26px; padding-top:6px;
+  font-family:var(--mono); font-size:12px; color:var(--ink-3);
+}
+.meta-strip b{color:var(--ink-2); font-weight:500}
+
+/* ---- dimension-line section divider ---- */
+.dim{display:flex; align-items:center; gap:14px; margin:64px 0 26px}
+.dim .num{
+  font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.14em;
+  color:var(--accent); white-space:nowrap;
+}
+.dim .line{
+  flex:1; height:9px; position:relative;
+}
+.dim .line::before{
+  content:""; position:absolute; left:0; right:0; top:4px; height:1px; background:var(--rule-strong);
+}
+.dim .line::after{
+  content:""; position:absolute; right:0; top:0; bottom:0; width:1px; background:var(--rule-strong);
+}
+.dim .cap{position:absolute; left:0; top:0; bottom:0; width:1px; background:var(--rule-strong)}
+
+.sec-head{display:flex; flex-direction:column; gap:10px; margin-bottom:22px}
+.sec-head p{color:var(--ink-2); font-size:15px; max-width:70ch}
+
+/* ---- status banner ---- */
+.banner{
+  background:var(--wait-bg); border:1px solid color-mix(in srgb,var(--wait) 34%,transparent);
+  border-left:3px solid var(--wait); border-radius:3px;
+  padding:20px 22px; display:flex; flex-direction:column; gap:9px; margin-top:34px;
+}
+.banner .t{font-weight:700; font-size:15px; color:var(--ink); display:flex; align-items:center; gap:9px}
+.banner .t .dot{width:7px; height:7px; border-radius:50%; background:var(--wait); flex:none}
+.banner p{font-size:14.5px; color:var(--ink-2); max-width:74ch}
+
+/* ---- chips ---- */
+.chip{
+  display:inline-flex; align-items:center; gap:5px; white-space:nowrap;
+  font-family:var(--mono); font-size:10.5px; font-weight:500; letter-spacing:.05em;
+  padding:2px 7px; border-radius:2px; border:1px solid transparent; line-height:1.6;
+}
+.chip.measured{background:var(--pass-bg); color:var(--pass); border-color:color-mix(in srgb,var(--pass) 36%,transparent)}
+.chip.store{background:var(--accent-soft); color:var(--accent-ink); border-color:color-mix(in srgb,var(--accent) 32%,transparent)}
+.chip.artifact{background:var(--accent-soft); color:var(--accent-ink); border-color:color-mix(in srgb,var(--accent) 32%,transparent)}
+.chip.thirdparty{background:var(--pass-bg); color:var(--pass); border-color:color-mix(in srgb,var(--pass) 30%,transparent)}
+.chip.vendor{background:var(--surface-2); color:var(--ink-2); border-color:var(--rule-strong)}
+.chip.unknown{background:var(--fail-bg); color:var(--fail); border-color:color-mix(in srgb,var(--fail) 34%,transparent)}
+:root[data-theme="dark"] .chip.store,:root[data-theme="dark"] .chip.artifact{color:var(--accent-ink)}
+
+.pill{
+  display:inline-flex; align-items:center; gap:6px; white-space:nowrap;
+  font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.06em;
+  padding:3px 9px; border-radius:99px; line-height:1.7;
+}
+.pill.ok{background:var(--pass-bg); color:var(--pass)}
+.pill.ng{background:var(--fail-bg); color:var(--fail)}
+.pill.hold{background:var(--wait-bg); color:var(--wait)}
+
+/* ---- legend ---- */
+.legend{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(238px,1fr)); gap:1px;
+  background:var(--rule); border:1px solid var(--rule); border-radius:3px; overflow:hidden;
+}
+.legend div{background:var(--surface); padding:14px 16px; display:flex; flex-direction:column; gap:7px}
+.legend p{font-size:13px; color:var(--ink-2); line-height:1.7}
+
+/* ---- tables ---- */
+.scroller{
+  overflow-x:auto; border:1px solid var(--rule); border-radius:3px;
+  background:var(--surface); box-shadow:var(--shadow);
+}
+table{border-collapse:collapse; width:100%; font-size:13.5px}
+th,td{text-align:left; padding:11px 14px; border-bottom:1px solid var(--rule); vertical-align:top}
+thead th{
+  background:var(--surface-2); font-family:var(--mono); font-weight:600;
+  font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-2);
+  white-space:nowrap; position:sticky; top:0; border-bottom:1px solid var(--rule-strong);
+}
+tbody tr:last-child td{border-bottom:none}
+td.num,th.num{font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap}
+td.name{font-weight:700; white-space:nowrap}
+td .vendor{display:block; font-weight:400; font-size:12px; color:var(--ink-3); margin-top:2px}
+.rank{
+  font-family:var(--mono); font-size:15px; font-weight:600; color:var(--accent);
+  font-variant-numeric:tabular-nums;
+}
+.yes{color:var(--pass); font-weight:600}
+.no{color:var(--fail)}
+.na{color:var(--ink-3)}
+
+/* ---- product cards ---- */
+.cards{display:flex; flex-direction:column; gap:18px}
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:3px;
+  box-shadow:var(--shadow); overflow:hidden;
+}
+.card > .hd{
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 14px;
+  padding:16px 20px; border-bottom:1px solid var(--rule); background:var(--surface-2);
+}
+.card .hd h3{font-family:var(--body); font-size:16px; font-weight:700}
+.card .hd .vend{font-size:12.5px; color:var(--ink-3); font-family:var(--mono)}
+.card .hd .spacer{flex:1}
+.card .bd{padding:4px 0}
+.row{display:grid; grid-template-columns:170px 1fr; gap:0; border-bottom:1px solid var(--rule)}
+.row:last-child{border-bottom:none}
+.row > dt{
+  padding:11px 20px; font-family:var(--mono); font-size:11.5px; letter-spacing:.05em;
+  color:var(--ink-3); background:transparent;
+}
+.row > dd{padding:11px 20px 11px 0; margin:0; font-size:14px; display:flex; flex-direction:column; gap:6px}
+.row .src{font-family:var(--mono); font-size:11px; color:var(--ink-3); word-break:break-all}
+.row .src a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+.row .src a:hover{border-bottom-color:var(--accent)}
+.quote{
+  font-size:12.5px; color:var(--ink-2); border-left:2px solid var(--rule-strong);
+  padding-left:11px; line-height:1.7;
+}
+@media (max-width:640px){
+  .row{grid-template-columns:1fr; gap:0}
+  .row > dt{padding-bottom:0}
+  .row > dd{padding:6px 20px 13px}
+}
+
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+
+footer.foot{
+  margin-top:72px; padding-top:26px; border-top:1px solid var(--rule-strong);
+  font-size:13px; color:var(--ink-3); display:flex; flex-direction:column; gap:9px; max-width:74ch;
+}
+footer.foot code{font-family:var(--mono); font-size:12px; color:var(--ink-2)}
+</style>
+
+<div class="wrap">
+<header class="mast">
+  <div class="col">
+    <span class="eyebrow">リフォーム現況調査 / 一次情報にもとづく独自調査</span>
+    <h1>現調スキャン図面化ランキング</h1>
+    <p class="lede">現場担当者がひとりで LiDAR スキャンし、見積に使える図面と数量が手間なく手に入るか。他者のランキングを転載せず、公式の一次情報・実ファイル・第三者検証のみを根拠に評価する。</p>
+  </div>
+  <div class="meta-strip">
+    <span>調査日 <b>2026-08-27</b></span>
+    <span>用途 <b>見積用（① 面積・主要寸法）</b></span>
+    <span>必須出力 <b>DXF</b></span>
+    <span>体制 <b>ひとりスキャン</b></span>
+    <span>端末 <b>LiDAR 前提</b></span>
+  </div>
+</header>
+
+<!--DATA-->
+
+<footer class="foot">
+  <p>調査設計・スキーマ・採点規則・実測プロトコルは <code>research/scan-to-plan-ranking/</code> に収録。</p>
+  <p>価格・機能は変動する。各項目の取得日を確認のうえ利用すること。</p>
+</footer>
+</div>
