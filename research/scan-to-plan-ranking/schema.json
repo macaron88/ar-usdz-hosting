@@ -1,0 +1,67 @@
+{
+  "$comment": "立証フェーズの共通項目。全担当がこの全項目を埋める。埋まらない項目は unknown を明示し、推測で埋めない。",
+  "product": "製品名",
+  "vendor": "提供元",
+  "vendor_country": "提供元の国",
+  "type": "A | B | C | D  (README の母集団4分類)",
+  "official_url": "公式サイト",
+  "store_urls": { "ios": null, "android": null },
+
+  "fields": {
+    "$comment": "以下の各キーは必ず value_object の形をとる（末尾の value_object 定義を参照）",
+
+    "device_requirement": "対応端末とOS要件。LiDAR搭載世代の下限（例: iPhone 12 Pro 以降）",
+    "uses_lidar": "LiDAR を計測に使うか。写真測量併用か",
+    "solo_operation": "ひとりで完結できるか。三脚・補助者・外部スキャナの要否",
+    "scan_area_limit": "1スキャンの面積・部屋数の上限。複数部屋の連結可否と方法",
+    "offline_capable": "電波がない現場でスキャンを完了できるか",
+
+    "processing_location": "端末内 / クラウド。クラウドなら処理待ち時間",
+    "auto_drafting_scope": "自動作図の範囲。壁・開口部(ドア/窓)・寸法線・部屋名のどこまでが自動か",
+
+    "area_takeoff_floor": "床面積を部屋別に自動算出するか",
+    "area_takeoff_wall": "壁面積を自動算出するか。開口部の控除は自動か",
+    "area_takeoff_ceiling": "天井面積を自動算出するか",
+    "opening_dimensions": "ドア・窓の寸法と数を自動で拾うか",
+    "quantity_export": "数量表の書き出し形式（CSV / Excel / PDF / なし）",
+
+    "output_formats": "出力可能な全形式のリスト。DXF/DWG/PDF/OBJ/PLY/E57/IFC/RVT/CSV/JPG 等。各形式について『どのプランで出せるか』『追加費用の有無』を必ず併記",
+    "dxf_availability": "DXF が出せるか。出せる場合のプラン名と追加費用",
+
+    "edit_environment": "修正作業をどこで行うか。端末 / Webブラウザ / 専用デスクトップアプリ / CAD側",
+    "edit_skill_required": "修正に CAD の知識が必要か。現場担当者本人が直せるか",
+
+    "pricing_model": "価格体系。月額 / 年額 / スキャン単価 / ㎡単価 / 買い切り。無料枠の範囲",
+    "pricing_actual": "実質単価。1戸あたりいくらになるか（試算の前提を明記）",
+
+    "jp_availability": "日本から契約・利用できるか。決済手段。請求書払いの可否",
+    "jp_language": "日本語UIの有無。日本語サポートの有無",
+    "jp_units": "mm 単位で扱えるか。単位系の切替",
+    "jp_support": "日本法人・国内代理店の有無",
+
+    "accuracy_claim": "ベンダーが表記する精度。必ず claim_type=vendor_claim で記録する",
+    "accuracy_thirdparty": "学術論文・公的検証による実測値。測定条件と数字がないものは採用しない",
+
+    "last_updated": "アプリの最終更新日（ストアの構造化データ）",
+    "vendor_continuity": "提供元の継続性の手がかり。更新頻度、資金調達、事業年数",
+    "data_handling": "スキャンデータの保管場所と取扱い方針"
+  },
+
+  "value_object": {
+    "$comment": "fields の各値はこの形で記録する",
+    "value": "確認できた内容。確認できなければ null",
+    "claim_type": "measured_by_us | store_meta | vendor_doc | third_party_verified | sample_artifact | unknown",
+    "source_url": "実際に取得できたURLのみ。取得できなかったURLは書かない",
+    "quote": "根拠となる原文の引用（最大200字）",
+    "fetched_at": "YYYY-MM-DD",
+    "confidence": "high | medium | low"
+  },
+
+  "gate_result": {
+    "$comment": "足切り判定。立証フェーズの結果から集約側が機械的に埋める",
+    "uses_lidar": null,
+    "dxf_output": null,
+    "solo_operation": null,
+    "accuracy_pass": "実測フェーズ後に判定"
+  }
+}
