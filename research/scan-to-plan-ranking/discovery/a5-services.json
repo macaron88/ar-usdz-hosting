@@ -1,0 +1,14 @@
+[
+{"product":"Canvas Scan To CAD","vendor":"Occipital / Twindo","official_url":"https://canvas.io/pricing/","type":"D","lidar":"yes","note":"iPad/iPhone LiDARでスキャンしアップロード、専門チームがレイヤ分けCADを返す。検索記録では $0.14/sqft〜（複数形式バンドルは $0.20/sqft）、納期1〜2日、特急+20%。"},
+{"product":"CubiCasa floor plan ordering","vendor":"CubiCasa","official_url":"https://www.cubi.casa/pricing/","type":"D","lidar":"unknown","note":"検索記録では2D間取り24時間以内、3Dは48時間、6時間特急$15。CADパッケージは .dwg/.dae/.obj/.fbx（DXFは未確認）。"},
+{"product":"RoomSketcher Floor Plan Service","vendor":"RoomSketcher","official_url":"https://www.roomsketcher.com/order-floor-plans/","type":"D","lidar":"no","note":"写真/PDF/スケッチと最低1つの寸法をアップロードし作図。検索記録では翌営業日納品、$20-38/フロア。DXFは未確認。"},
+{"product":"MP2FP","vendor":"MP2FP","official_url":"https://mp2fp.com/","type":"D","lidar":"unknown","note":"MatterPak/OBJ/点群をアップロードし、作図者が DWG, DXF, SKP を返す。見積ベース。"},
+{"product":"チルダ 間取り図面作成代行","vendor":"チルダ","official_url":"https://tilde.jp/m/","type":"D","lidar":"no","note":"日本の間取り作図代行。ページタイトルに最速で当日納品OK。価格・入力形式は未確認。"},
+{"product":"間取り図作成.com","vendor":"間取り図作成.com","official_url":"https://www.madorizusakusei.com/","type":"D","lidar":"no","note":"検索記録では1点120円から、サンプル1点無料。納期未確認。不動産広告向け。"},
+{"product":"GMC 間取り図作成代行","vendor":"株式会社ヒルストン","official_url":"https://www.hillston.co.jp/gmc-madorizu/","type":"D","lidar":"no","note":"検索記録では1フロア630円(税別)〜、約6時間で納品。不動産広告用であり寸法入り現況図ではない。"},
+{"product":"まどりマン","vendor":"まどりマン","official_url":"https://www.madoriman.jp/","type":"D","lidar":"no","note":"検索記録では4LDKまで1件330円、最短6時間納品。不動産広告用。"},
+{"product":"有限会社グロース 建築図面作成代行","vendor":"有限会社グロース","official_url":"https://www.gros.jp/zumen/","type":"D","lidar":"no","note":"新築・リフォーム向けに平面図・配置図・立面図・外構図を作成代行。広告用より現況図寄り。価格・DXF納品は未確認。"},
+{"product":"株式会社エーピーエヌ CAD化代行","vendor":"株式会社エーピーエヌ","official_url":"https://www.apn-jp.com/digitize/drawing-data/","type":"D","lidar":"no","note":"紙図面や3Dスキャンからのリバースエンジニアリング。納品形式 DXF, DWG, STEP, IGES。"},
+{"product":"愛管 3Dスキャン現場調査","vendor":"愛管株式会社","official_url":"https://i-kan.co.jp/3dscan/","type":"D","lidar":"no","note":"3Dスキャン現場調査・計測代行と図面作成。詳細未確認。"},
+{"product":"建築家コミュニティ 訪問3Dスキャン","vendor":"株式会社建築家コミュニティ","official_url":"https://www.kenchikuka-community.com/?page_id=2433","type":"D","lidar":"no","note":"訪問3Dスキャン測量から図面化まで。価格・納期未確認。"}
+]

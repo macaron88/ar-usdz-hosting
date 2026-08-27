@@ -1,0 +1,1326 @@
+[
+ {
+  "product": "3Dマイホームデザイナー／3Dアーキデザイナー",
+  "vendor": "メガソフト株式会社",
+  "official_url": "https://www.megasoft.co.jp/3d/",
+  "type": "C",
+  "lidar": "no",
+  "note": "間取り＋3D住宅デザインソフト。3次元DXFの読み込み・書き出しに対応。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "3Dレーザースキャナ測量調査サービス",
+  "vendor": "住友林業アーキテクノ株式会社",
+  "official_url": "https://www.sumirin-at.co.jp/3d_scanner/",
+  "type": "D",
+  "lidar": "no",
+  "note": "3Dレーザースキャナによる計測代行。点群だけでなく平面図・天井伏図などの図面化まで納品。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "3D測定サービス 点群DXF変換",
+  "vendor": "3D測定サービス",
+  "official_url": "https://3dsokutei-service.com/case/post-2865/",
+  "type": "D",
+  "lidar": "no",
+  "note": "Japanese case page for converting point cloud data into 2D DXF drawings.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "3d Scanner App",
+  "vendor": "Laan Labs",
+  "official_url": "https://3dscannerapp.com/",
+  "store_url": "https://apps.apple.com/us/app/3d-scanner-app-lidar-scan/id1419913995",
+  "type": "C",
+  "lidar": "yes",
+  "note": "iPhone/iPad LiDAR scanner exporting OBJ/GLTF/STL meshes, PTS/PCD/PLY/XYZ/LAS/E57 point clouds and DXF floor plan images.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "5DPlan LiDAR Room Scanner 3D",
+  "vendor": "5DPlan",
+  "official_url": "https://apps.apple.com/us/app/lidar-room-scanner-3d-5dplan/id6474450135",
+  "type": "A",
+  "lidar": "yes",
+  "note": "Multi-room LiDAR scan producing 2D/3D floor plans and a browser-viewable shareable property view.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "AI間取り(間取りクラウド)",
+  "vendor": "株式会社ピーシーコネクト",
+  "official_url": "https://madori.jp/ai/",
+  "type": "C",
+  "lidar": "no",
+  "note": "間取り画像をAIが認識して間取り図を自動作成。約80-90%を自動作図し残りは手動編集。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "ALTA Revolution (× RITTAI SCAN)",
+  "vendor": "コンピュータシステム研究所",
+  "official_url": "https://www.cstnet.co.jp/archi/products/alta/index.html",
+  "type": "C",
+  "lidar": "yes",
+  "note": "住宅営業戦略システム。2025年10月版でRITTAI SCANのLiDAR点群(glb)取り込みに対応し、現調データから提案書・見積書を作成。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "ANDPAD 3Dスキャン",
+  "vendor": "株式会社アンドパッド",
+  "official_url": "https://andpad.jp/products/3d_scan",
+  "type": "C",
+  "lidar": "yes",
+  "note": "iPhone/iPad Pro LiDAR point-cloud capture for site survey field notes; data viewed via ANDPAD 図面BIM.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "AR Plan 3D Tape Measure",
+  "vendor": "Grymala",
+  "official_url": "https://play.google.com/store/apps/details?id=com.grymala.arplan",
+  "type": "A",
+  "lidar": "no",
+  "note": "ARCore-based room measuring producing floor plans on Android.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "ARCHITREND ONE",
+  "vendor": "福井コンピュータアーキテクト",
+  "official_url": "https://apps.apple.com/jp/app/architrend-one/id6738369518",
+  "type": "C",
+  "lidar": "unknown",
+  "note": "Mobile companion to ARCHITREND ONE cloud CAD service for sharing design data on site.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "ArcSite",
+  "vendor": "ArcSite Inc.",
+  "official_url": "https://www.arcsite.com/features/ar-scanner",
+  "store_url": "https://apps.apple.com/us/app/arcsite-floor-plans-and-cad/id986274256",
+  "type": "A",
+  "lidar": "yes",
+  "note": "LiDAR AR room scan produces editable 2D floor plan in a CAD drawing app; exports PDF, PNG, DXF, DWG. Android version exists.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "ArchAI 間取り図作成",
+  "vendor": "unknown (JP listing)",
+  "official_url": "https://apps.apple.com/jp/app/id6475383389",
+  "type": "A",
+  "lidar": "yes",
+  "note": "LiDAR room scan generating dimensioned floor plan with walls, doors and windows, plus AR measuring.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "Archilogic",
+  "vendor": "Archilogic",
+  "official_url": "https://www.archilogic.com/",
+  "type": "unknown",
+  "lidar": "unknown",
+  "note": "Floor plan data platform with JS SDK/API for embedding and managing space data; developer tooling rather than field capture.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Arrival 3D",
+  "vendor": "Arrival 3D",
+  "official_url": "https://arrival3d.com/services/scan-to-cad-services/",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Scan-to-CAD service converting 3D scans and 2D drawings into CAD deliverables.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Asteroom",
+  "vendor": "Asteroom",
+  "official_url": "https://www.asteroom.com/en",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Property data collection and 3D tour platform offering dimensioned floor plans, 3D dollhouse and staging as ordered services.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Bosch MeasureOn",
+  "vendor": "Robert Bosch Power Tools",
+  "official_url": "https://www.bosch-professional.com/ch/de/measureon/",
+  "store_url": "https://apps.apple.com/us/app/bosch-measureon/id1515070546",
+  "type": "A",
+  "lidar": "yes",
+  "note": "Floor-plan sketching with laser-measure integration; from v1.13 captures room geometry via iPhone/iPad Pro LiDAR.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "Building Capture",
+  "vendor": "Building Capture",
+  "official_url": "https://www.buildingcapture.com/floorplans",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Existing-conditions floor plan scanning service delivering DXF, DWG, .e57 point cloud and 2D PDF.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "CamPlan",
+  "vendor": "CamPlan AI",
+  "official_url": "https://camplan.ai/floor-plan-scanner",
+  "store_url": "https://apps.apple.com/sr/app/floor-plan-ai-home-camplan/id6444421373",
+  "type": "A",
+  "lidar": "yes",
+  "note": "LiDAR room capture with automatic wall/window/door detection; states exports including PDF, DXF, CAD, USDZ, OBJ, DAE.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "CamToPlan",
+  "vendor": "Tasmanic",
+  "official_url": "https://apps.apple.com/us/app/camtoplan-3d-scanner-lidar/id1547594886",
+  "type": "A",
+  "lidar": "yes",
+  "note": "AR/LiDAR real-time floor plan creation for rooms up to whole flats/houses.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "Canvas Scan To CAD",
+  "vendor": "Occipital / Twindo",
+  "official_url": "https://canvas.io/pricing/",
+  "type": "D",
+  "lidar": "yes",
+  "note": "iPad/iPhone LiDARでスキャンしアップロード、専門チームがレイヤ分けCADを返す。検索記録では $0.14/sqft〜（複数形式バンドルは $0.20/sqft）、納期1〜2日、特急+20%。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "CloudCompare",
+  "vendor": "open source",
+  "official_url": "https://www.cloudcompare.org/",
+  "type": "C",
+  "lidar": "no",
+  "note": "Free open-source point cloud and mesh viewer/editor used before CAD drafting.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "CubiCasa",
+  "vendor": "CubiCasa",
+  "official_url": "https://www.cubi.casa/",
+  "store_url": "https://apps.apple.com/us/app/cubicasa-2d-3d-floor-plans/id1439879192",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Phone walkthrough scan uploaded to cloud; 2D floor plans returned in ~24h (6h express) with optional CAD package delivering .dwg, .dae, .obj, .fbx.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "CubiCasa floor plan ordering",
+  "vendor": "CubiCasa",
+  "official_url": "https://www.cubi.casa/pricing/",
+  "type": "D",
+  "lidar": "unknown",
+  "note": "検索記録では2D間取り24時間以内、3Dは48時間、6時間特急$15。CADパッケージは .dwg/.dae/.obj/.fbx（DXFは未確認）。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "Cupix (CupixWorks)",
+  "vendor": "Cupix",
+  "official_url": "https://www.cupix.com/",
+  "type": "unknown",
+  "lidar": "unknown",
+  "note": "Converts 360 video, laser scans and drone imagery into 3D digital twins aligned to floor plans; supports DWG drawings and IFC/RVT BIM.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "DesignScanner",
+  "vendor": "unknown",
+  "official_url": "https://apps.apple.com/app/designscanner/id6468659434",
+  "type": "A",
+  "lidar": "yes",
+  "note": "Scans a room in under 60 seconds and returns 2D floor plans and interactive 3D models.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "Digital Strada Matterport Scan to CAD",
+  "vendor": "Digital Strada",
+  "official_url": "https://digitalstrada.com/matterport-scan-to-cad",
+  "type": "B",
+  "lidar": "yes",
+  "note": "Human drafting service converting Matterport Pro3 LiDAR scans into layered AutoCAD .DWG/.DXF floor plans in 2-4 business days.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Dot3D Pro for iOS",
+  "vendor": "DotProduct LLC",
+  "official_url": "https://www.dot3d.app/",
+  "store_url": "https://apps.apple.com/us/app/dot3d-precision-lidar-scanner/id1641016966",
+  "type": "C",
+  "lidar": "yes",
+  "note": "Professional iOS LiDAR point cloud capture app with on-device processing.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "Encircle",
+  "vendor": "Encircle",
+  "official_url": "https://www.getencircle.com/2d-floor-plan",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Smartphone property scan uploaded; dimensioned 2D floor plan returned (average ~2 hours, 6-hour guarantee) ready for Xactimate.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Existing Conditions",
+  "vendor": "Existing Conditions Surveys",
+  "official_url": "https://www.existingconditions.com/service/reality-capture-services",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Reality-capture service bureau using NavVis VLX, Leica and FARO scanners delivering as-built 2D CAD floor plans and 3D BIM.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "FARO As-Built",
+  "vendor": "FARO Technologies",
+  "official_url": "https://www.laserscanning-europe.com/en/products/software/faro-software/faro-asbuilt",
+  "type": "C",
+  "lidar": "no",
+  "note": "Point cloud to CAD/BIM software creating 2D floor plans and auto-detecting walls, doors and windows.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "FARO Sphere XG (formerly HoloBuilder)",
+  "vendor": "FARO",
+  "official_url": "https://www.holobuilder.com/faro-sphere-xg/",
+  "type": "unknown",
+  "lidar": "unknown",
+  "note": "Cloud platform unifying point clouds, 360 photos and 3D models, with a feature to create schematic 2D floor plans from 3D scan data.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Flexijet 3D / FlexiCAD",
+  "vendor": "Flexijet GmbH",
+  "official_url": "https://www.flexijet.info/en/products/flexijet-3d-laser-measuring-system/",
+  "type": "C",
+  "lidar": "no",
+  "note": "Motorised laser distance measuring head plus FlexiCAD software writing 2D/3D CAD geometry live while measuring on site.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "Floor Plan Creator",
+  "vendor": "Floor Plan Creator",
+  "official_url": "https://floorplancreator.net/",
+  "type": "A",
+  "lidar": "unknown",
+  "note": "Floor plan and 3D model app listed as partner app by Leica and Hilti; supports Bluetooth laser distance meters.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "GMC 間取り図作成代行",
+  "vendor": "株式会社ヒルストン",
+  "official_url": "https://www.hillston.co.jp/gmc-madorizu/",
+  "type": "D",
+  "lidar": "no",
+  "note": "検索記録では1フロア630円(税別)〜、約6時間で納品。不動産広告用であり寸法入り現況図ではない。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "GeoMaus Scan to CAD",
+  "vendor": "GeoMaus",
+  "official_url": "https://geomaus.com/services/scan-to-cad/",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Scan-to-CAD service quoting scope and delivery within 48 hours, returning DWG, PDF or requested format.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Giraffe360",
+  "vendor": "Giraffe360",
+  "official_url": "https://www.giraffe360.com/the-product/create-floor-plans/",
+  "type": "B",
+  "lidar": "yes",
+  "note": "Rental LiDAR 360 camera, up to 200,000 measurements per scan; 2D floor plans plus HDR photos and virtual tours returned by the platform.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Hover (Interiors)",
+  "vendor": "Hover",
+  "official_url": "https://hover.to/interiors/",
+  "type": "B",
+  "lidar": "no",
+  "note": "Photo-based interior capture requiring no LiDAR; returns wall/floor/ceiling/door/window measurements and sketches.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "ImageMeter Pro",
+  "vendor": "Dirk Farin",
+  "official_url": "https://dirk-farin.net/projects/ImageMeter/",
+  "type": "C",
+  "lidar": "unknown",
+  "note": "Photo-annotation measurement app with broad Bluetooth laser-meter support.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "InfiPoints",
+  "vendor": "株式会社エリジオン",
+  "official_url": "https://infipoints.elysium-global.com/",
+  "type": "C",
+  "lidar": "no",
+  "note": "Japanese point cloud processing software with automatic plane extraction, dimensioning and CAD/BIM conversion.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "KIRI Engine",
+  "vendor": "KIRI Innovations",
+  "official_url": "https://www.kiriengine.app/blog/iphone-lidar-room-scan-floor-plan",
+  "type": "unknown",
+  "lidar": "yes",
+  "note": "3D scanning app whose Room Scan mode captures a room with iPhone LiDAR and generates a 2D floor plan with room measurements.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "L-ポケット",
+  "vendor": "株式会社LIXIL",
+  "official_url": "https://l-pocket.lixil.co.jp/lp/lpocket/special/",
+  "store_url": "https://apps.apple.com/jp/app/id1530887953",
+  "type": "C",
+  "lidar": "no",
+  "note": "リフォーム事業者向け営業アプリ。水まわり・窓・エクステリアの現調テンプレート。2025年追加のAI機能で窓写真から規格サイズ判定と概算見積。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "LRTK Phone",
+  "vendor": "株式会社レフィクシア",
+  "official_url": "https://www.lrtk.lefixea.com/lrtk-phone",
+  "type": "C",
+  "lidar": "yes",
+  "note": "RTK-GNSS attachment for iPhone/iPad; cloud service auto-traces uploaded point clouds and outputs DXF/DWG plans and sections.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "Leica Cyclone 3DR Scan to Plan",
+  "vendor": "Leica Geosystems",
+  "official_url": "https://cyclone3dr.leica-geosystems.com/help/2024.1/ScanToPlanExportPlansC.html",
+  "type": "C",
+  "lidar": "no",
+  "note": "Point cloud software whose Scan-to-Plan workflow exports plans as DXF.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "Leica Cyclone FIELD 360 (QuickPlan)",
+  "vendor": "Leica Geosystems",
+  "official_url": "https://leica-geosystems.com/products/laser-scanners/software/leica-cyclone/leica-cyclone-field-360",
+  "store_url": "https://apps.apple.com/us/app/leica-cyclone-field-360/id1376463007",
+  "type": "unknown",
+  "lidar": "unknown",
+  "note": "Field app for Leica RTC/BLK360/BLK2GO scans; QuickPlan add-on extracts walls, doors, windows to build 2D/3D floor plans exportable to DXF or IFC.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Leica DISTO Plan",
+  "vendor": "Leica Geosystems",
+  "official_url": "https://shop.leica-geosystems.com/measurement-tools/disto/leica-disto-plan-app",
+  "store_url": "https://apps.apple.com/us/app/leica-disto-plan/id1361178866",
+  "type": "A",
+  "lidar": "no",
+  "note": "Floor/wall plans from DISTO laser measurements and P2P; exports JPG, PDF, DXF 2D/2D+Height/3D and DWG (CAD export subscription-gated).",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "MP2FP",
+  "vendor": "MP2FP",
+  "official_url": "https://mp2fp.com/",
+  "type": "D",
+  "lidar": "unknown",
+  "note": "MatterPak/OBJ/点群をアップロードし、作図者が DWG, DXF, SKP を返す。見積ベース。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "Make Plan 2D/3D LiDAR Scanner",
+  "vendor": "unknown",
+  "official_url": "https://apps.apple.com/us/app/make-plan-2d-3d-lidar-scanner/id6743439372",
+  "type": "A",
+  "lidar": "yes",
+  "note": "LiDAR capture of floor plans with 2D/3D visualization and automatic internal/external wall detection.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "Manifold",
+  "vendor": "Manifold",
+  "official_url": "https://www.scanmanifold.com/interiors",
+  "type": "A",
+  "lidar": "yes",
+  "note": "iPhone LiDAR walk generates structured 2D floor plan with labeled walls and dimensions.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "Matterport CAD/BIM file service (JP reseller)",
+  "vendor": "ABKSS",
+  "official_url": "https://www.abkss.jp/products/matterport",
+  "type": "B",
+  "lidar": "yes",
+  "note": "Japanese reseller page describing Matterport CAD file creation (DWG, ~3 business days) and BIM file (LOD200 RVT/IFC) services.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Matterport Capture",
+  "vendor": "Matterport Inc.",
+  "official_url": "https://support.matterport.com/hc/en-us/articles/1500004898402-Matterport-Capture-for-iOS",
+  "store_url": "https://apps.apple.com/us/app/matterport/id701086043",
+  "type": "B",
+  "lidar": "yes",
+  "note": "Cloud-processed digital twin; schematic floor plans and RVT/DWG exports ordered as add-ons.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "Matterport Schematic Floor Plans",
+  "vendor": "Matterport",
+  "official_url": "https://matterport.com/schematic-floor-plans",
+  "type": "B",
+  "lidar": "yes",
+  "note": "Paid add-on ordered against an existing Matterport scan; schematic floor plans delivered within about two business days, with separate CAD File (DWG) and BIM File services on higher subscription tiers.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Matterport 撮影／図面化サービス",
+  "vendor": "有限会社リビングCG",
+  "official_url": "https://livingcg.jp/matterport/case/case-4/",
+  "type": "D",
+  "lidar": "unknown",
+  "note": "Matterport日本正規販売店。撮影した点群から間取り図・寸法が自動生成され、点群(.xyz)やOBJでBIM/CADに取り込める。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "MeasureSquare Mobile",
+  "vendor": "MeasureSquare",
+  "official_url": "https://measuresquare.com/product/mobile/",
+  "store_url": "https://apps.apple.com/us/app/measuresquare-mobile/id845027391",
+  "type": "A",
+  "lidar": "unknown",
+  "note": "Field measure/estimating app producing 2D/3D floor plans and material quotes; pairs with Leica DISTO, Bosch and DeWalt Bluetooth meters.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "MeasureSquare Room Scanner",
+  "vendor": "Measure Square",
+  "official_url": "https://measuresquare.com/room-scanner-3d-lidar-scanning-app-measuring-tool/",
+  "type": "unknown",
+  "lidar": "yes",
+  "note": "iPhone/iPad Pro LiDAR capture of walls, doors, windows and ceiling heights, feeding MeasureSquare Mobile to auto-generate flooring takeoffs.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Metaroom",
+  "vendor": "AMRAX GmbH",
+  "official_url": "https://amrax.ai/3d-room-scan/",
+  "store_url": "https://apps.apple.com/us/app/metaroom-3d-room-scanner/id1637077163",
+  "type": "B",
+  "lidar": "yes",
+  "note": "iPhone Pro scan processed into parametric 3D room model and 2D floor plan; states 2D DXF, PDF, IFC, GLB and 30+ export formats.",
+  "sources": [
+   "a1-appstores.json",
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Moasure ONE",
+  "vendor": "Moasure",
+  "official_url": "https://www.moasure.com/pages/features-export",
+  "store_url": "https://apps.apple.com/us/app/moasure/id1561726410",
+  "type": "C",
+  "lidar": "no",
+  "note": "Motion-based measuring device with companion app exporting drawings to DWG, DXF, PDF, CSV, PNG/JPG/SVG.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "Modelar 3D LiDAR Scanner",
+  "vendor": "Modelar",
+  "official_url": "https://apps.apple.com/us/app/modelar-3d-lidar-scanner/id1572844190",
+  "type": "C",
+  "lidar": "yes",
+  "note": "iPhone/iPad Pro LiDAR scanner with point cloud export to E57, LAS, PLY and CSV.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "NavLive",
+  "vendor": "NavLive",
+  "official_url": "https://navlive.ai/scanner/",
+  "type": "unknown",
+  "lidar": "yes",
+  "note": "Handheld SLAM scanner with AI-generated 2D plans, Scan2BIM and DXF/CAD export, targeted at RICS 1:100 grade surveys.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "NavVis IVION",
+  "vendor": "NavVis",
+  "official_url": "https://www.navvis.com/ivion/scan-to-bim",
+  "type": "unknown",
+  "lidar": "unknown",
+  "note": "Cloud platform for mobile-mapping point clouds generating 2D floor plans and 3D models for scan-to-BIM.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Nest3D",
+  "vendor": "Nest3D",
+  "official_url": "https://www.nest3d.ai/blog",
+  "type": "B",
+  "lidar": "no",
+  "note": "Point-cloud-to-CAD conversion offering; only blog/resource pages retrieved.",
+  "sources": [
+   "a3-capture-platforms.json",
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "OpenPlan3D Capture",
+  "vendor": "OpenPlan3D",
+  "official_url": "https://openplan3d.com/capture",
+  "store_url": "https://apps.apple.com/us/app/openplan3d/id6759076170",
+  "type": "A",
+  "lidar": "yes",
+  "note": "Free open-source LiDAR room scan to editable floor plan; states PNG, SVG, DXF, PDF, USDZ export.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "OpenSpace",
+  "vendor": "OpenSpace",
+  "official_url": "https://www.openspace.ai/products/capture/",
+  "type": "unknown",
+  "lidar": "unknown",
+  "note": "360 camera, phone, drone and laser-scan capture mapped onto existing floor plans and BIM; documents conditions rather than drafting new plans.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "PIX4Dcatch",
+  "vendor": "Pix4D",
+  "official_url": "https://www.pix4d.com/product/pix4dcatch",
+  "store_url": "https://apps.apple.com/us/app/pix4dcatch-3d-scanner/id1511483044",
+  "type": "C",
+  "lidar": "yes",
+  "note": "Mobile photogrammetry + LiDAR capture producing point clouds and 3D models.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "PanasonicリフォームClub アプリ",
+  "vendor": "パナソニック",
+  "official_url": "https://www2.panasonic.biz/jp/sumai/plan/app/reformclub/",
+  "type": "C",
+  "lidar": "unknown",
+  "note": "リフォーム提案支援iOSアプリ。既存住宅状況調査「家検」、施工写真・提案資料機能。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "Plnar / Plnar Pro",
+  "vendor": "Plnar",
+  "official_url": "https://plnar.ai/",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "AI platform converting smartphone imagery into 2D/3D room layouts, floorplans and measurements for insurance claims, interiors and remodeling.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "PointCab Origins",
+  "vendor": "PointCab GmbH",
+  "official_url": "https://pointcab-software.com/en/point-cloud-software/pointcab_origins/",
+  "type": "C",
+  "lidar": "no",
+  "note": "Desktop point cloud software generating floor plans and sections with semi-automatic vectorizer; exports DWG/DXF.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "Pointfuse",
+  "vendor": "Pointfuse (Arithmetica)",
+  "official_url": "https://pointfuse.com/software/",
+  "type": "unknown",
+  "lidar": "unknown",
+  "note": "Point-cloud-to-mesh software able to export multi-level floor plans to CAD; standalone product discontinued 2025-05-01, technology folded into Autodesk ReCap Pro 2026.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Polycam",
+  "vendor": "Polycam Inc.",
+  "official_url": "https://poly.cam/floor-plans",
+  "store_url": "https://apps.apple.com/us/app/polycam-3d-scanner-lidar-360/id1532482376",
+  "type": "A",
+  "lidar": "yes",
+  "note": "LiDAR/photo capture plus automatic 2D floor plans with measurements; DXF export stated on Business/Enterprise plans.",
+  "sources": [
+   "a1-appstores.json",
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "RICOH360 Tours Floor Plan Generator",
+  "vendor": "Ricoh",
+  "official_url": "https://www.ricoh360.com/ja/tours/features/floor-plan-generator/",
+  "type": "B",
+  "lidar": "no",
+  "note": "Uploads RICOH THETA 360 imagery to Ricoh cloud and auto-generates a floor plan from the panorama tour; marketing-oriented output.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "RITTAI SCAN",
+  "vendor": "株式会社Forgers",
+  "official_url": "https://forgers.co.jp/service/rittai-rittai-scan",
+  "store_url": "https://apps.apple.com/jp/app/rittai-scan/id6745224477",
+  "type": "C",
+  "lidar": "yes",
+  "note": "Business-contract LiDAR scanning app producing point cloud/mesh for layout simulation and digital archiving.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "Re:BIM",
+  "vendor": "スターツアセットマネジメント",
+  "official_url": "https://www.starts.co.jp/news/press/2023/6302/",
+  "type": "B",
+  "lidar": "yes",
+  "note": "退去修繕・リフォーム特化のクラウドBIM。iPad Pro LiDAR専用アプリで室内をスキャンし簡易BIMモデルを自動生成、床壁天井の面積・数量から見積を自動作成。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "Realsee",
+  "vendor": "Realsee",
+  "official_url": "https://www.realsee.ai/pages/deliverables",
+  "type": "B",
+  "lidar": "yes",
+  "note": "Galois LiDAR camera capture processed in Realsee cloud; deliverables include schematic floor plans (PNG) and an Auto CAD product generating structural floor plans in .DXF and .DWG.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "RoomPlot",
+  "vendor": "RoomPlot",
+  "official_url": "https://roomplot.com/",
+  "type": "A",
+  "lidar": "yes",
+  "note": "LiDAR scan or hand-drawn plan, 2D/3D editing, multi-floor; states PDF reports, DXF CAD files and USDZ export.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "RoomScan Pro LiDAR",
+  "vendor": "Locometric",
+  "official_url": "https://www.locometric.com/lidar",
+  "store_url": "https://apps.apple.com/us/app/roomscan-pro-lidar-floor-plans/id1504050801",
+  "type": "A",
+  "lidar": "yes",
+  "note": "Floor plans with doors/windows from LiDAR or RoomPlan; exports PNG, PDF, DXF, IFC, point cloud; vendor also offers Scan-to-CAD drafting service.",
+  "sources": [
+   "a1-appstores.json",
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "RoomSketcher Floor Plan Service",
+  "vendor": "RoomSketcher",
+  "official_url": "https://www.roomsketcher.com/order-floor-plans/",
+  "type": "D",
+  "lidar": "no",
+  "note": "写真/PDF/スケッチと最低1つの寸法をアップロードし作図。検索記録では翌営業日納品、$20-38/フロア。DXFは未確認。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "SCENA",
+  "vendor": "SCENA",
+  "official_url": "https://scena.us/solutions/as-built-documentation/",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "As-built documentation service producing point clouds, CAD floor plans and Matterport digital twins.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Sakura3D SCAN",
+  "vendor": "株式会社アルモニコス",
+  "official_url": "https://www.armonicos.co.jp/shop/sakura/",
+  "store_url": "https://apps.apple.com/jp/app/sakura3d-scan/id1527410156",
+  "type": "C",
+  "lidar": "yes",
+  "note": "Japanese iPad/iPhone Pro LiDAR scanner capturing full-colour point clouds and meshes; exports ASC, TXT, STL, OBJ.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "ScanToBIM-CAD",
+  "vendor": "ScanToBIM-CAD",
+  "official_url": "https://www.thescantobim.com/",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Upload LAS, E57 or PLY point cloud and receive automatically vectorized DXF and IFC floor plan in minutes.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Scanat (スキャナット)",
+  "vendor": "nat Inc.",
+  "official_url": "https://www.scanat.app/",
+  "store_url": "https://apps.apple.com/jp/app/scanat/id1589890507",
+  "type": "B",
+  "lidar": "yes",
+  "note": "Japanese iPhone/iPad LiDAR measurement app: 間取りスキャン mode exports simple DXF on-device; paid CAD図面作成代行 returns plans, elevations, ceiling plans; also FBX/OBJ/STL/E57/XYZ and CSV measurement lists.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Scanbrix",
+  "vendor": "Scanbrix",
+  "official_url": "https://www.scanbrix.com/",
+  "store_url": "https://apps.apple.com/us/app/scanbrix-lidar-scan-to-cad/id6753146245",
+  "type": "B",
+  "lidar": "yes",
+  "note": "Scan with LiDAR iPhone/iPad, upload point cloud, receive Revit .rvt, SketchUp .skp or AutoCAD .dwg as-built floor plans and elevations in 1-2 business days.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "SiteScape",
+  "vendor": "FARO (SiteScape)",
+  "official_url": "https://www.sitescape.ai/faq",
+  "store_url": "https://apps.apple.com/us/app/sitescape-lidar-scanner-cad/id1524700432",
+  "type": "C",
+  "lidar": "yes",
+  "note": "iPhone/iPad LiDAR point-cloud capture app for AEC; own cloud retired, scans upload to FARO Sphere XG.",
+  "sources": [
+   "a3-capture-platforms.json",
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "SiteScope Tech",
+  "vendor": "SiteScope Tech",
+  "official_url": "https://apps.apple.com/us/app/sitescope-tech-3d-scan-to-cad/id6754949039",
+  "type": "unknown",
+  "lidar": "unknown",
+  "note": "iOS 3D scan-to-CAD app surfaced in scan-to-CAD searches; only App Store listing retrieved.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "SnapMeasure",
+  "vendor": "unknown",
+  "official_url": "https://apps.apple.com/us/app/snapmeasure/id6752489404",
+  "type": "A",
+  "lidar": "yes",
+  "note": "LiDAR room scanning to 2D floor plans, multi-room merge, in-scan annotation of electrical/plumbing points.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "Spacely (スペースリー)",
+  "vendor": "Spacely, Inc.",
+  "official_url": "https://info.spacely.co.jp/",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Japanese cloud VR platform; uploaded panoramas or 3D CG auto-processed into VR tours; real-estate oriented rather than CAD delivery.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Twindo (formerly Canvas by Occipital)",
+  "vendor": "Occipital / Twindo",
+  "official_url": "https://www.twindo.com/",
+  "store_url": "https://apps.apple.com/us/app/twindo-formerly-canvas/id1169235377",
+  "type": "B",
+  "lidar": "yes",
+  "note": "iPhone/iPad Pro LiDAR scan uploaded for paid Scan-to-CAD conversion priced per sq ft; 2D floor plans and 3D CAD/BIM in ~2 business days.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Undet Point Cloud to CAD",
+  "vendor": "Undet",
+  "official_url": "https://www.undet.com/undet-products/undet-point-cloud-to-cad/",
+  "type": "C",
+  "lidar": "no",
+  "note": "Plug-in toolset for drafting 2D floor plans, elevations and sections from as-built point clouds.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "Walk in home SP / AI",
+  "vendor": "株式会社キャドネット",
+  "official_url": "https://walkinhomesp.com/",
+  "type": "C",
+  "lidar": "no",
+  "note": "工務店・住宅会社向け建築3D CAD。間取りスキャナーのスキャンデータを取り込み、プレゼン・法規チェック・積算見積まで扱う。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "Walk in home プランにゃ～ (scan import)",
+  "vendor": "安心計画",
+  "official_url": "https://www.walk-in-home.jp/information/694",
+  "type": "unknown",
+  "lidar": "yes",
+  "note": "Free Japanese planning app whose LiDAR スキャン取込み turns a room scan into dimensioned 間取り data and 3D model.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "Zillow 3D Home / Interactive Floor Plans",
+  "vendor": "Zillow",
+  "official_url": "https://www.zillow.com/z/3d-home/floor-plans/",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "Free phone or 360-camera capture; AI-generated interactive 2D floor plan for listings; no CAD export.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "i3Dfolio",
+  "vendor": "i3Dfolio",
+  "official_url": "https://i3dfolio.com/",
+  "type": "A",
+  "lidar": "yes",
+  "note": "On-device LiDAR scan converted to editable 2D floor plan; states DXF, OBJ, STL export with no cloud.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "iGUIDE (PLANIX)",
+  "vendor": "Planitar",
+  "official_url": "https://goiguide.com/iguide/floor-plans",
+  "type": "B",
+  "lidar": "yes",
+  "note": "Proprietary LiDAR camera capture uploaded to iGUIDE Portal; floor plans as PDF/SVG/JPG plus CAD deliverables in DWG, DXF point cloud, RVT and Xactimate ESX.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "iMapper",
+  "vendor": "iMapper",
+  "official_url": "https://www.imapper.tech/en-us",
+  "type": "unknown",
+  "lidar": "unknown",
+  "note": "Laser-based floor plan capture platform claiming +/-1/16 in accuracy; point clouds uploaded, rooms auto-merged, plans exported to CAD including DXF.",
+  "sources": [
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "magicplan",
+  "vendor": "Sensopia",
+  "official_url": "https://magicplan.app/",
+  "store_url": "https://apps.apple.com/us/app/magicplan/id427424432",
+  "type": "A",
+  "lidar": "yes",
+  "note": "On-device 2D/3D floor plans from LiDAR/camera scan; export list includes PDF, DXF, JPG, PNG, SVG, CSV, OBJ, USDZ, Xactimate ESX.",
+  "sources": [
+   "a1-appstores.json",
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "mapry建築",
+  "vendor": "株式会社マプリィ",
+  "official_url": "https://service.mapry.co.jp/architecture/",
+  "store_url": "https://apps.apple.com/jp/app/mapry%E5%BB%BA%E7%AF%89/id6572285559",
+  "type": "A",
+  "lidar": "yes",
+  "note": "Free iOS app: indoor LiDAR scan producing floor plans, elevation drawings and 3D models with multi-room merge; positioned for area calculation and estimates.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "pronoScan2CAD",
+  "vendor": "プロノハーツ株式会社",
+  "official_url": "https://prono82.com/2022/06/02/pronoscan2cad/",
+  "store_url": "https://apps.apple.com/jp/app/pronoscan2cad/id1617244032",
+  "type": "C",
+  "lidar": "yes",
+  "note": "Japanese iOS app that extracts a measurement plane from an iPhone/iPad LiDAR point cloud and outputs 2D DXF line drawings.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "rigi3Dplan",
+  "vendor": "Saint-Gobain Rigips",
+  "official_url": "https://www.rigips.de/en/presseinfos-news/3d-measurement-smartphone",
+  "type": "A",
+  "lidar": "yes",
+  "note": "LiDAR room measurement producing dimensioned 3D model plus quantity/parts-list calculation; exports FBX, USDZ and CSV dimensions.",
+  "sources": [
+   "a1-appstores.json"
+  ]
+ },
+ {
+  "product": "room me",
+  "vendor": "株式会社TWPLAN",
+  "official_url": "https://twplan.jp/roomme/",
+  "store_url": "https://apps.apple.com/jp/app/id1661912695",
+  "type": "B",
+  "lidar": "yes",
+  "note": "原状回復工事特化のモバイル現調システム。スキャンで部屋を自動計測し3Dモデル化、Web側で見積・工程・報告書・請求まで一元管理。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "いえらぶAI間取り",
+  "vendor": "株式会社いえらぶGROUP",
+  "official_url": "https://ielove-cloud.jp/service/makingtool/",
+  "type": "C",
+  "lidar": "no",
+  "note": "間取り図画像をAIが認識して自動作図。画像入力であり実測スキャンではない。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "だれでも現地調査",
+  "vendor": "REMODELA株式会社",
+  "official_url": "https://lp-gentyo.remodela.jp/",
+  "type": "B",
+  "lidar": "unknown",
+  "note": "不動産管理業者・建設業者向けの無料現地調査アプリ。スマホで居室をスキャンして工事見積書を自動生成。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "まどりっち",
+  "vendor": "福井コンピュータアーキテクト",
+  "official_url": "https://archi.fukuicompu.co.jp/products/madoritchi/index.html",
+  "type": "A",
+  "lidar": "no",
+  "note": "iPad用の手描き感覚間取り作成アプリ。作成プランはクラウド経由でARCHITREND ZEROのCADデータへ自動変換。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "まどりマン",
+  "vendor": "まどりマン",
+  "official_url": "https://www.madoriman.jp/",
+  "type": "D",
+  "lidar": "no",
+  "note": "検索記録では4LDKまで1件330円、最短6時間納品。不動産広告用。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "りのべっち",
+  "vendor": "福井コンピュータアーキテクト",
+  "official_url": "https://archi.fukuicompu.co.jp/products/rinovetchi/index.html",
+  "store_url": "https://apps.apple.com/jp/app/id6444428605",
+  "type": "A",
+  "lidar": "yes",
+  "note": "リノベ現況調査アプリ。壁線をLiDARスキャンして寸法付き3Dモデルと現況間取り図を自動生成し、ARCHITREND Drive経由でARCHITREND ZEROのCADデータに変換。",
+  "sources": [
+   "a2-japan-saas.json",
+   "a3-capture-platforms.json"
+  ]
+ },
+ {
+  "product": "チルダ 間取り図面作成代行",
+  "vendor": "チルダ",
+  "official_url": "https://tilde.jp/m/",
+  "type": "D",
+  "lidar": "no",
+  "note": "日本の間取り作図代行。ページタイトルに最速で当日納品OK。価格・入力形式は未確認。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "プランナーEX",
+  "vendor": "福井コンピュータシステム",
+  "official_url": "https://www.thesystem.co.jp/product/index.html",
+  "type": "C",
+  "lidar": "no",
+  "note": "住宅・リフォーム積算ソフト。最大8000項目のリフォーム積算に対応し、伏図のDXF出力が可能。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "ランサーズ 平面図制作",
+  "vendor": "ランサーズ株式会社",
+  "official_url": "https://www.lancers.jp/menu/tag/%E5%B9%B3%E9%9D%A2%E5%9B%B3",
+  "type": "D",
+  "lidar": "no",
+  "note": "Japanese freelance marketplace for tracing sketches or drawings into floor plans delivered as PDF, JWW, DWG or DXF.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "リモデラ",
+  "vendor": "REMODELA株式会社",
+  "official_url": "https://service.remodela.jp/",
+  "type": "C",
+  "lidar": "unknown",
+  "note": "原状回復・入退去向けの工事管理SaaS。現調アプリ群と組み合わせて見積・発注業務。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "リモデラメジャー",
+  "vendor": "REMODELA株式会社",
+  "official_url": "https://prtimes.jp/main/html/rd/p/000000008.000075721.html",
+  "store_url": "https://apps.apple.com/jp/app/id6443444634",
+  "type": "A",
+  "lidar": "yes",
+  "note": "RoomPlan-based free app: scan, edit model (wall height correction, beams, sticky notes), produce dimensioned floor plan.",
+  "sources": [
+   "a1-appstores.json",
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "三機キャドケンドロ 3Dスキャナ現場調査",
+  "vendor": "三機キャドケンドロ株式会社",
+  "official_url": "https://www.kendoro.co.jp/pages/19/",
+  "type": "D",
+  "lidar": "no",
+  "note": "Japanese service measuring buildings with 3D scanners and producing floor plans, sections and 3D CAD from the point cloud.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "建築家コミュニティ 訪問3Dスキャン",
+  "vendor": "株式会社建築家コミュニティ",
+  "official_url": "https://www.kenchikuka-community.com/?page_id=2433",
+  "type": "D",
+  "lidar": "no",
+  "note": "訪問3Dスキャン測量から図面化まで。価格・納期未確認。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "快測Scan",
+  "vendor": "株式会社建設システム(KENTEM)",
+  "official_url": "https://www.kentem.jp/product-service/ksscan/",
+  "type": "C",
+  "lidar": "yes",
+  "note": "LiDAR搭載iPad Pro/iPhone Proで点群を取得する3次元測量アプリ。その場で寸法確認・体積計算。土木・出来形管理向けが主。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "愛管 3Dスキャン現場調査",
+  "vendor": "愛管株式会社",
+  "official_url": "https://i-kan.co.jp/3dscan/",
+  "type": "D",
+  "lidar": "no",
+  "note": "3Dスキャン現場調査・計測代行と図面作成。詳細未確認。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "有限会社グロース 建築図面作成代行",
+  "vendor": "有限会社グロース",
+  "official_url": "https://www.gros.jp/zumen/",
+  "type": "D",
+  "lidar": "no",
+  "note": "新築・リフォーム向けに平面図・配置図・立面図・外構図を作成代行。広告用より現況図寄り。価格・DXF納品は未確認。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "株式会社エーピーエヌ CAD化代行",
+  "vendor": "株式会社エーピーエヌ",
+  "official_url": "https://www.apn-jp.com/digitize/drawing-data/",
+  "type": "D",
+  "lidar": "no",
+  "note": "紙図面や3Dスキャンからのリバースエンジニアリング。納品形式 DXF, DWG, STEP, IGES。",
+  "sources": [
+   "a5-services.json"
+  ]
+ },
+ {
+  "product": "現地調査 空間設備3Dデジタル化",
+  "vendor": "MIRAIZ株式会社",
+  "official_url": "https://www.miraiz21.co.jp/architect_g/research/",
+  "type": "D",
+  "lidar": "no",
+  "note": "3Dレーザースキャナと高精度カメラで空間を点群化し、3D CAD化・2D図面化・解析まで行う調査代行。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "積木製作 3D SCAN",
+  "vendor": "株式会社積木製作",
+  "official_url": "https://tsumikiseisaku.com/3dscan/",
+  "type": "D",
+  "lidar": "no",
+  "note": "Japanese FARO Focus laser scanning service including drawing existing buildings from captured point clouds.",
+  "sources": [
+   "a4-cad-pointcloud.json"
+  ]
+ },
+ {
+  "product": "間取りスキャナー",
+  "vendor": "株式会社マプリィ／株式会社キャドネット",
+  "official_url": "https://mapry.co.jp/service/5629/",
+  "type": "A",
+  "lidar": "yes",
+  "note": "LiDAR搭載iPhone/iPadで現調を完結する現況図面アプリ。3Dパース・平面図・立面図を自動生成し、Walk in home SPや汎用CAD(JWCAD、AutoCAD等)へ出力。",
+  "sources": [
+   "a2-japan-saas.json"
+  ]
+ },
+ {
+  "product": "間取り図作成.com",
+  "vendor": "間取り図作成.com",
+  "official_url": "https://www.madorizusakusei.com/",
+  "type": "D",
+  "lidar": "no",
+  "note": "検索記録では1点120円から、サンプル1点無料。納期未確認。不動産広告向け。",
+  "sources": [
+   "a5-services.json"
+  ]
+ }
+]

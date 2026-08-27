@@ -1,0 +1,22 @@
+[
+{"product":"りのべっち","vendor":"福井コンピュータアーキテクト","official_url":"https://archi.fukuicompu.co.jp/products/rinovetchi/index.html","store_url":"https://apps.apple.com/jp/app/id6444428605","type":"A","lidar":"yes","note":"リノベ現況調査アプリ。壁線をLiDARスキャンして寸法付き3Dモデルと現況間取り図を自動生成し、ARCHITREND Drive経由でARCHITREND ZEROのCADデータに変換。"},
+{"product":"まどりっち","vendor":"福井コンピュータアーキテクト","official_url":"https://archi.fukuicompu.co.jp/products/madoritchi/index.html","type":"A","lidar":"no","note":"iPad用の手描き感覚間取り作成アプリ。作成プランはクラウド経由でARCHITREND ZEROのCADデータへ自動変換。"},
+{"product":"プランナーEX","vendor":"福井コンピュータシステム","official_url":"https://www.thesystem.co.jp/product/index.html","type":"C","lidar":"no","note":"住宅・リフォーム積算ソフト。最大8000項目のリフォーム積算に対応し、伏図のDXF出力が可能。"},
+{"product":"ALTA Revolution (× RITTAI SCAN)","vendor":"コンピュータシステム研究所","official_url":"https://www.cstnet.co.jp/archi/products/alta/index.html","type":"C","lidar":"yes","note":"住宅営業戦略システム。2025年10月版でRITTAI SCANのLiDAR点群(glb)取り込みに対応し、現調データから提案書・見積書を作成。"},
+{"product":"Re:BIM","vendor":"スターツアセットマネジメント","official_url":"https://www.starts.co.jp/news/press/2023/6302/","type":"B","lidar":"yes","note":"退去修繕・リフォーム特化のクラウドBIM。iPad Pro LiDAR専用アプリで室内をスキャンし簡易BIMモデルを自動生成、床壁天井の面積・数量から見積を自動作成。"},
+{"product":"間取りスキャナー","vendor":"株式会社マプリィ／株式会社キャドネット","official_url":"https://mapry.co.jp/service/5629/","type":"A","lidar":"yes","note":"LiDAR搭載iPhone/iPadで現調を完結する現況図面アプリ。3Dパース・平面図・立面図を自動生成し、Walk in home SPや汎用CAD(JWCAD、AutoCAD等)へ出力。"},
+{"product":"Walk in home SP / AI","vendor":"株式会社キャドネット","official_url":"https://walkinhomesp.com/","type":"C","lidar":"no","note":"工務店・住宅会社向け建築3D CAD。間取りスキャナーのスキャンデータを取り込み、プレゼン・法規チェック・積算見積まで扱う。"},
+{"product":"L-ポケット","vendor":"株式会社LIXIL","official_url":"https://l-pocket.lixil.co.jp/lp/lpocket/special/","store_url":"https://apps.apple.com/jp/app/id1530887953","type":"C","lidar":"no","note":"リフォーム事業者向け営業アプリ。水まわり・窓・エクステリアの現調テンプレート。2025年追加のAI機能で窓写真から規格サイズ判定と概算見積。"},
+{"product":"room me","vendor":"株式会社TWPLAN","official_url":"https://twplan.jp/roomme/","store_url":"https://apps.apple.com/jp/app/id1661912695","type":"B","lidar":"yes","note":"原状回復工事特化のモバイル現調システム。スキャンで部屋を自動計測し3Dモデル化、Web側で見積・工程・報告書・請求まで一元管理。"},
+{"product":"だれでも現地調査","vendor":"REMODELA株式会社","official_url":"https://lp-gentyo.remodela.jp/","type":"B","lidar":"unknown","note":"不動産管理業者・建設業者向けの無料現地調査アプリ。スマホで居室をスキャンして工事見積書を自動生成。"},
+{"product":"リモデラメジャー","vendor":"REMODELA株式会社","official_url":"https://lp-measure.remodela.jp/","store_url":"https://apps.apple.com/jp/app/id6443444634","type":"A","lidar":"yes","note":"LiDAR搭載iPhone Pro/iPad Pro向けの無料採寸・間取図作成アプリ。RoomPlanベース。"},
+{"product":"リモデラ","vendor":"REMODELA株式会社","official_url":"https://service.remodela.jp/","type":"C","lidar":"unknown","note":"原状回復・入退去向けの工事管理SaaS。現調アプリ群と組み合わせて見積・発注業務。"},
+{"product":"PanasonicリフォームClub アプリ","vendor":"パナソニック","official_url":"https://www2.panasonic.biz/jp/sumai/plan/app/reformclub/","type":"C","lidar":"unknown","note":"リフォーム提案支援iOSアプリ。既存住宅状況調査「家検」、施工写真・提案資料機能。"},
+{"product":"快測Scan","vendor":"株式会社建設システム(KENTEM)","official_url":"https://www.kentem.jp/product-service/ksscan/","type":"C","lidar":"yes","note":"LiDAR搭載iPad Pro/iPhone Proで点群を取得する3次元測量アプリ。その場で寸法確認・体積計算。土木・出来形管理向けが主。"},
+{"product":"いえらぶAI間取り","vendor":"株式会社いえらぶGROUP","official_url":"https://ielove-cloud.jp/service/makingtool/","type":"C","lidar":"no","note":"間取り図画像をAIが認識して自動作図。画像入力であり実測スキャンではない。"},
+{"product":"AI間取り(間取りクラウド)","vendor":"株式会社ピーシーコネクト","official_url":"https://madori.jp/ai/","type":"C","lidar":"no","note":"間取り画像をAIが認識して間取り図を自動作成。約80-90%を自動作図し残りは手動編集。"},
+{"product":"3Dマイホームデザイナー／3Dアーキデザイナー","vendor":"メガソフト株式会社","official_url":"https://www.megasoft.co.jp/3d/","type":"C","lidar":"no","note":"間取り＋3D住宅デザインソフト。3次元DXFの読み込み・書き出しに対応。"},
+{"product":"3Dレーザースキャナ測量調査サービス","vendor":"住友林業アーキテクノ株式会社","official_url":"https://www.sumirin-at.co.jp/3d_scanner/","type":"D","lidar":"no","note":"3Dレーザースキャナによる計測代行。点群だけでなく平面図・天井伏図などの図面化まで納品。"},
+{"product":"現地調査 空間設備3Dデジタル化","vendor":"MIRAIZ株式会社","official_url":"https://www.miraiz21.co.jp/architect_g/research/","type":"D","lidar":"no","note":"3Dレーザースキャナと高精度カメラで空間を点群化し、3D CAD化・2D図面化・解析まで行う調査代行。"},
+{"product":"Matterport 撮影／図面化サービス","vendor":"有限会社リビングCG","official_url":"https://livingcg.jp/matterport/case/case-4/","type":"D","lidar":"unknown","note":"Matterport日本正規販売店。撮影した点群から間取り図・寸法が自動生成され、点群(.xyz)やOBJでBIM/CADに取り込める。"}
+]
