@@ -1,0 +1,38 @@
+{
+"_provenance":"WebSearch のタイトル・URL・スニペットのみ。ページ本文は未取得（egress 遮断）。claim_type は全て search_snippet。",
+"_fetched_at":"2026-08-27",
+"products":[
+{"product":"Re:BIM","vendor":"スターツアセットマネジメント","device":"LiDAR搭載 iPad Pro 第3世代以降 専用アプリ。iPhone対応の記載なし",
+ "area_takeoff":"床・壁・天井の面積と住宅設備・建具などの数量を自動算出し、企業ごとの単価を積算して見積書を自動作成。開口部控除の明示なし",
+ "speed":"60-70m2 の住戸で計測・簡易BIM作成・見積作成が各10分、計約30分",
+ "dxf":"記載なし（DXF/CAD出力を狙った検索で該当スニペットゼロ）","pricing":"公開情報なし",
+ "solo":"「iPadひとつで誰でも簡単に測量可能」（業界紙見出し）",
+ "restriction":"賃貸住宅の退去修繕・リフォームに特化。当初スターツグループ内利用想定、その後外販",
+ "sources":["https://www.starts.co.jp/news/press/2023/6302/","https://www.jutaku-s.com/newsp/id/0000061656","https://built.itmedia.co.jp/bt/articles/2311/21/news100.html"]},
+{"product":"room me","vendor":"株式会社TWPLAN","device":"iPhone 12/13/14/15 Pro、iPad Pro 2020年モデル以降",
+ "area_takeoff":"スキャンから採寸・数量算出、選択した仕上げに応じて数量が実行予算に反映。クロス張替え面積・塗装面積の算出が主用途。開口部控除の明示なし",
+ "dxf":"記載なし","output":"見積書・注文請書・注文書などPDF一括出力。CAD系形式の記載なし",
+ "pricing":"1ライセンス6,600円（税込）、5ライセンスで1つ無償。課金周期は不明。計測機能は無料",
+ "solo":"「初心者でも1人で現場調査」。一人親方向けの言及あり",
+ "restriction":"原状回復工事に特化",
+ "sources":["https://twplan.jp/roomme/","https://twplan.jp/guide/plan/","https://twplan.jp/guide/functions/","https://twplan.jp/guide/howto/481/","https://prtimes.jp/main/html/rd/p/000000001.000112142.html"]},
+{"product":"リモデラメジャー / だれでも現地調査","vendor":"REMODELA株式会社","device":"LiDAR搭載 iPhone Pro / iPad Pro。iOS16 RoomPlan API を利用",
+ "area_takeoff":"リモデラメジャーは採寸と寸法付き間取図。面積内訳の自動算出は記載なし。だれでも現地調査は居室スキャンで工事見積書を自動生成",
+ "speed":"ワンルームの現調で30-45分程度","dxf":"記載なし","output":"形式の明示なし",
+ "pricing":"いずれも無料","solo":"専門知識のない不動産会社やオーナーでも現地調査ができる、と明示",
+ "restriction":"原状回復文脈。コスト削減効果は同社マッチング「リモデラ」経由の職人発注が前提と記載され、エコシステム依存の疑い",
+ "sources":["https://lp-measure.remodela.jp/","https://lp-gentyo.remodela.jp/","https://prtimes.jp/main/html/rd/p/000000008.000075721.html","https://prtimes.jp/main/html/rd/p/000000009.000075721.html"]},
+{"product":"pronoScan2CAD","vendor":"プロノハーツ株式会社","device":"LiDAR搭載 iPhone Pro 12以降、iPad Pro 12.9第4世代/11第2世代以降",
+ "area_takeoff":"なし。点群から計測平面を手動抽出し、点群上で任意の点を選んで線分を引く方式",
+ "dxf":"あり。2次元CADデータをDXFで出力。ただし無料版は抽出直線4本まで",
+ "pricing":"基本無料（線分4本まで）、年間ライセンス6,000円でフル機能",
+ "solo":"スマホ版平板測量としてiPhone単体運用が前提","restriction":"App Store販売、業種限定なし。用途文脈は土木・測量寄り",
+ "sources":["https://prono82.com/2022/06/02/pronoscan2cad/","https://ken-it.world/it/2022/06/plan-surveying-by-iphone.html","https://apps.apple.com/jp/app/pronoscan2cad/id1617244032"]}
+],
+"_cross_findings":[
+ "面積→見積を自動化する3製品（Re:BIM / room me / だれでも現地調査）はいずれもDXF出力の記載がゼロ",
+ "DXFが確認できたpronoScan2CADは面積算出も自動作図もなく、手で線を引く方式",
+ "Re:BIM と room me は退去修繕・原状回復に業種限定。REMODELAは自社職人ネットワークへの発注が前提",
+ "Re:BIM は iPad Pro のみで iPhone 対応の記載がなく、LiDAR iPhone 前提の運用と噛み合わない可能性",
+ "開口部控除を明示した製品は4製品中ゼロ"
+]}
