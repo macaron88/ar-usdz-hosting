@@ -1,0 +1,67 @@
+{
+"_provenance":"WebSearch のスニペットのみ。ページ本文は未取得。","_fetched_at":"2026-08-27",
+"_core_insight":"センサ精度と図面精度は別物。点群が5mm精度でも、RoomPlanがその点群に簡略な箱モデルをML当てはめして図面を作るため、壁が20cmずれることがある。学術論文の多くは点群を地上型レーザースキャナと比較しており、自動生成された図面の精度を測っていない。",
+
+"independent_tests":[
+{"product":"magicplan（LiDAR自動スキャン）","tester":"MAVRiC（英国の計測測量research blog）","independent":true,
+ "numbers":"大きめのテスト室でLiDAR単独の平均誤差は150mm以内。「精度に関してはかなり物足りない」と評価。Bluetoothレーザー距離計を併用すると「ぴったり」",
+ "conditions":"単一の大きめの室。LiDAR自動スキャン vs レーザー距離計併用 vs 紙と鉛筆。2020年11月〜2021年2月のため初期のLiDARビルド",
+ "url":"https://mavricresearch.com/2021/02/02/more-lidar-contenders-how-do-they-measure-up%F0%9F%93%8F/","confidence":"medium-high",
+ "note":"本調査で見つかった唯一のまともな独立実測。ただし5年以上前のビルド"},
+{"product":"Apple RoomPlan（magicplan・RoomScan Pro・Scanat間取りモード・リモデラメジャー・りのべっち・OpenPlan3Dの土台）",
+ "tester":"it-jim（コンピュータビジョン受託企業の技術ブログ）","independent":true,
+ "numbers":"壁あたり最大 ±5cm の計測ドリフト。実際の壁厚を計算できず、標準的な約16cmの間仕切りに単純化してしまう",
+ "conditions":"開発者視点の評価。対象室・基準器の記載なし","url":"https://www.it-jim.com/blog/roomplan-framework-by-apple/","confidence":"medium"},
+{"product":"Apple RoomPlan / Polycam","tester":"LiDAR3D.io","independent":true,
+ "numbers":"あるデモ空間で実測6.45mに対しRoomPlan出力6.821m（37cm超の乖離）。ただしこの数値は再現検索で確認できず要検証",
+ "conditions":"レストラン・2階建て住宅・小部屋をスキャン。小部屋では隅の柱や障害物により誤差が拡大",
+ "url":"https://www.lidar3d.io/post/testing-the-precision-of-apple-s-ios-roomplan-api-a-polycam-lidar-3d-scanning-app-feature-review","confidence":"low-medium"}
+],
+
+"vendor_claims":[
+{"product":"Polycam","claim":"標準的な室内で ±1/2インチ。プロ用レーザー距離計との比較と記載。壁間は室の大きさにより0.5〜2インチ、天井高は数mm以内。信頼できるのは約5mまで","url":"https://poly.cam/blog/best-floor-plan-software-compared-accuracy-speed-and-cost-for-every-budget"},
+{"product":"Metaroom","claim":"計測距離の ±1%、壁あたり通常1〜2cm。有効レンジ15mまで","url":"https://help.amrax.ai/de/sample-page/scannen-mit-der-metaroom-app/wie-genau-sind-die-scanergebnisse/"},
+{"product":"Canvas / Twindo","claim":"LiDAR機なら納品CADの大半が巻尺・レーザー・既存図面の1〜2%以内。深度センサなしなら約5%以内","url":"https://support.canvas.io/article/5-what-kind-of-accuracy-can-i-expect-from-canvas"},
+{"product":"CubiCasa","claim":"平均寸法精度95〜97%、標準的な住宅間取りで約1〜3%","url":"https://www.cubi.casa/cubicasa-gla-reliability/"},
+{"product":"Re:BIM","claim":"計測誤差は3%以内（業界紙の報道だがベンダー主張の再掲と読める）","url":"https://ken-it.world/it/2023/10/re-bim-released.html"},
+{"product":"リモデラメジャー","claim":"6帖正方形の部屋で数cm程度の誤差内。ただし「スマホの傾け方や測定位置で精度が変わるので寸法はあくまで参考程度に」と自ら限定","url":"https://lp-measure.remodela.jp/"},
+{"product":"Scanat","claim":"東京都立産業技術研究センターで設定値5000.6mmに対し誤差19.6mm（1%以下）。ただしこれは約5mの単一距離計測であり、自動生成された間取り図の精度ではない","url":"https://scanat.app/report.html"}
+],
+
+"failure_modes":[
+{"scope":"リモデラメジャー","issue":"梁を認識できない。全部屋の高さが統一されてしまう",
+ "quote":"システムの仕様上梁を認識させることができず、梁部分は編集画面にて補正する必要があり、また全部屋の高さが統一されてしまうため、高さが一律ではない場合は編集画面にて補正する必要があります",
+ "url":"https://lp-measure.remodela.jp/",
+ "impact":"日本のリフォーム現調では致命的。梁と下がり天井が構造的に表現できず、毎回すべて手作業。ベンダー自身のLPに書かれているため信頼度が高い"},
+{"scope":"リモデラメジャー","issue":"暗い部屋は測定不可（50ルクス以上が必要）。広い部屋ほど誤差が拡大",
+ "quote":"暗い部屋になると測定できない場合があります。明るい状態（50ルクス以上）でご利用ください、また広い部屋になるほど誤差が生じやすくなります","url":"https://lp-measure.remodela.jp/"},
+{"scope":"Apple RoomPlan（RoomPlanベースの全アプリに波及）","issue":"壁厚を実測せず約16cmの標準間仕切りに単純化する。複数室のマージ時にのみ厚みを調整。ドア＋窓の連窓や両開きドアを単一面として誤認",
+ "url":"https://www.it-jim.com/blog/roomplan-framework-by-apple/",
+ "impact":"壁厚が実測されないということは、壁芯寸法が推定値になるということ。見積面積に直接効く"},
+{"scope":"Apple RoomPlan","issue":"多数室・大空間の一括スキャンを想定していない。Apple推奨の上限は約9m×9m。長時間スキャンはトラッキング劣化・端末発熱・ドリフトを招く",
+ "url":"https://developer.apple.com/videos/play/wwdc2023/10192/"},
+{"scope":"Apple RoomPlan","issue":"2年以上RoomPlanを使ってきた開発者から、近時スキャン品質の劣化報告。単純で明るい矩形の室でも出力が破綻する",
+ "url":"https://developer.apple.com/forums/thread/809725"},
+{"scope":"Polycam / RoomPlan","issue":"段差・斜め・不整形・勾配天井の取得に問題。柱・方立・曲面壁を取りこぼす。隅に柱や障害物がある小部屋では大部屋より精度が悪化",
+ "url":"https://www.lidar3d.io/post/testing-the-precision-of-apple-s-ios-roomplan-api-a-polycam-lidar-3d-scanning-app-feature-review"},
+{"scope":"CubiCasa","issue":"外形寸法を測れない。壁厚を仮定して内法寸法に加算する。既定は外壁6インチ・内壁4インチ。浴室・厨房・車庫は配管や防火のため実際は厚く、仮定値が系統的に外れる",
+ "url":"https://appraisersforum.com/forums/threads/cubicasa.234231/page-2"},
+{"scope":"CubiCasa","issue":"物件全体を一度で撮り切る必要がある。2部屋以上撮り漏らすとスキャン全体をやり直し",
+ "url":"https://help.cubi.casa/en/articles/6662285-what-if-i-forget-to-scan-an-area",
+ "impact":"撮り漏らしのコストが再訪問。ひとりスキャンでは現実的なリスク"},
+{"scope":"CubiCasa","issue":"納品前に人間のQAチームがAIの推定を検証・修正している。つまり納品物は純粋な自動出力ではない",
+ "url":"https://help.cubi.casa/en/articles/6662584-how-accurate-are-your-plans"},
+{"scope":"magicplan","issue":"自動スキャンが形状は概ね合っているのに実寸の4倍の大きさで出力された、壁を固定しても寸法編集が隣室に誤って波及した、という利用者報告",
+ "url":"https://community.magicplan.app/c/ask-the-community/inaccurate-measurements-in-floor-plan-redraws"},
+{"scope":"全般","issue":"光沢面・鏡・全面ガラスはレーザーを散乱させる。約5mを超えるとドリフトが始まる。照明条件が精度の最大要因と繰り返し指摘されている",
+ "url":"https://help.magicplan.app/how-accurate-is-magicplan"},
+{"scope":"mapry建築","issue":"モジュール（910mmや1000mm等）に合わせた寸法の自動補正機能がある",
+ "quote":"モジュール（910mmや1000mm等）に合わせた寸法の自動補正機能があります","url":"https://mapry.co.jp/service/4844/",
+ "impact":"精度を隠す挙動。モジュールにスナップした図面は真の誤差にかかわらず綺麗に見えるため、出力から精度を推定できない。さらにリフォームの現況調査では、既存住宅は施工誤差・沈下・改修歴によりモジュール通りではないことが多く、スナップはむしろ知りたい実際のズレを消してしまう可能性がある"}
+],
+
+"no_independent_data":["ArcSite","CubiCasa","Metaroom","Canvas/Twindo","RoomScan Pro","Scanat","mapry建築","間取りスキャナー","りのべっち","Re:BIM","リモデラメジャー","magicplanの現行版"],
+
+"_source_quality_warning":"illustrarch, skyebrowse, scanmanifold, simplywise, floorplan-app.com, kiriengine などの記事は、最近の日付と自信ありげな数値を載せているがSEO/AI生成のレビュー農場と読める内容で、測定手順の記載がない。すべて割り引くべき。",
+"_conclusion":"独立した数値の実測データはほぼ存在せず、あっても5年前。したがって精度で順位を付けることはできない。一方で失敗モードの証拠は強固で、手直しの発生要因を示している。順位はこちらを軸にすべき。"
+}

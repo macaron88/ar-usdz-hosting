@@ -1,0 +1,59 @@
+{
+"_provenance":"WebSearch のスニペットのみ。ページ本文は未取得。","_fetched_at":"2026-08-27",
+
+"_headline":"査読論文でApple RoomPlanの自動生成図面の形状精度を測量グレードの基準と比較したものは発見できなかった。学術文献が測っているのは点群であり、RoomPlanが点群に簡略な箱モデルを当てはめて作る図面の精度ではない。",
+
+"wall_centre_vs_inner":{
+ "finding":"どのアプリが壁芯で出すのか内法で出すのかを述べた情報源は、ベンダー・業界紙・実務者のいずれにも発見できなかった",
+ "stake":"壁芯面積は内法面積より一般に5〜8%大きい。マンションのリフォーム・登記・査定は内法、戸建ての登記は壁芯が一般的",
+ "physical_inference":"LiDARは見えている内側の表面しか取得できない。したがって壁厚を加算しない自動出力は本質的に内法である。ただしこれは物理からの推論であり、そう明記した情報源は無い",
+ "why_it_matters":"5〜8%の系統的な面積の食い違いは、精度の宣伝文句が語る1〜3cmの寸法誤差より桁で大きい。見積用途では、誤差の議論より先にこちらが効く。しかも日本の公開情報にこれを書いた人が見当たらない",
+ "reinforcement":"RoomPlanは壁厚を実測せず約16cmの標準間仕切りに固定する（it-jim）。つまり壁芯寸法は推定値であり、実際の壁厚とは無関係"},
+
+"roomplan_envelope":{
+ "finding":"公開されている動作条件が、想定している使い方と最初から矛盾している",
+ "limits":[
+  "Apple推奨の最大スキャンサイズは 9m×9m のワンルーム",
+  "iPhone LiDAR の有効範囲は 0.3〜5m。それ以上高い/遠いものは取得できない",
+  "1回のスキャンは5分以内が推奨。超えると発熱・電池・トラッキング劣化",
+  "複数室のマージは各室の座標系を統合する際に大きな歪みを持ち込む。各室単体では妥当に見えても統合モデルは深刻に歪む",
+  "天井データを取得しない。勾配天井・回り縁・幅木はほぼ常に無視される",
+  "壁厚を実測せず約16cmに固定。50cmを超える構造物は2枚の薄い壁に分割される",
+  "曲面壁・角度のついた壁・アーチ開口・見切りを誤表現する",
+  "鏡と全面ガラスはセンサを無効化する。ガラス面をドアと誤認する例も",
+  "特徴のない白い壁面はスキャンが難しい"],
+ "conclusion":"「担当者ひとりが戸建て一棟をスキャンして見積グレードの面積を得る」は、公開されている動作envelope の外側にある。周辺的な事例ではなく前提から外れている",
+ "sources":["https://developer.apple.com/videos/play/wwdc2022/10127/","https://developer.apple.com/videos/play/wwdc2023/10192/","https://www.it-jim.com/blog/roomplan-framework-by-apple/","https://note.com/andpad_zero/n/n6d22fa953036"]},
+
+"apple_own_numbers":{
+ "note":"Appleが公表しているのは検出精度であって寸法精度ではない。混同してはならない",
+ "claim":"壁と窓のカテゴリで precision/recall 95%、ドアで90%。16の物体カテゴリで3D IoU 30%時の平均 precision 91% / recall 90%",
+ "caution":"これは「そこに壁がある」と当てられた割合であり、その壁が何cmずれているかを一切示していない",
+ "url":"https://machinelearning.apple.com/research/roomplan"},
+
+"jp_practitioner_findings":[
+{"topic":"ドア・ガラス面","finding":"RoomPlanがドアを正しくスキャンできない場合があり、ガラス面をドアと誤認識することがある","url":"https://note.com/andpad_zero/n/ndde50fda950d"},
+{"topic":"累積ドリフト","finding":"広範囲を歩き回ると自己位置の累積誤差で点群が歪み、平坦な壁が湾曲する。同じ場所に一周して戻ると起点と終点の点群がずれて閉合しない","url":"https://zenn.dev/izm/articles/2129fede4ff373"},
+{"topic":"鏡・ガラス","finding":"透明物はレーザーが透過して認識されない。鏡は映り込みがスキャンされてゴーストが発生。対策は鏡を布で覆う・カーテンを閉める。日本の住宅では洗面・浴室・掃き出し窓が該当","url":"https://skhonpo.com/blogs/faq/3d-scan-failure-causes-7-patterns"},
+{"topic":"iPhone LiDAR vs トータルステーション","finding":"座標比較で誤差は最大約28mm、最小2mm。ただし屋内か屋外か、スキャン長、機種、点数の記載がなく、土木の文脈と思われる","url":"https://digital-construction.jp/column/1696","independent":true},
+{"topic":"Scanat 精度検証","finding":"東京都産業技術センターで基準長5000.6mmに対し誤差19.6mm。ただし約5mの単一距離のベンチ試験であり、複数室にわたる閉合ドリフトについては何も語っていない","url":"https://chizaizukan.com/property/scanat","independent":false}],
+
+"jp_specific_gap":{
+ "searched":["和室","押入","床の間","下がり天井","梁","段差","引き戸","襖","障子","天井高","狭い廊下","ユニットバス"],
+ "result":"いずれについても、自動出力がどう扱うかを報告した日本語の一次的記録・業界紙記事・検証は発見できなかった。検索を省いたのではなく、公開情報が存在しない",
+ "indirect":"別製品のAI間取り（画像認識、LiDARではない）が「建具は引き違いと片開きドアに対応」と明記している。日本のベンダーは引き違いを明示的に対応すべきものとして扱っている"},
+
+"rework_reports":[
+{"product":"Walk in home プランにゃ～","finding":"LiDARスキャン取込み後に必要な操作として、モジュール選択・要素削除・建具の吊元変更・建物回転を挙げている。専用コマンドが用意されているということは、建具の吊元が間違って出ることが常態と読める","url":"https://www.walk-in-home.jp/information/694"},
+{"product":"りのべっち","finding":"自動生成された寸法は調整可能と明記。既存図面をPDF・写真・紙から下図として取り込みトレースする機能も併存しており、想定ワークフローに手作業のトレースが残っている","url":"https://built.itmedia.co.jp/bt/articles/2310/03/news183.html"},
+{"product":"Scaniverse 導入企業","finding":"現場作業は約25%短縮、しかし図面作成は約20%短縮にとどまる。つまり作図工数の約8割が残る。企業名・基準値の記載なし","url":"https://digital-construction.jp/column/630"},
+{"product":"ALTA × RITTAI SCAN","finding":"従来の手作業による現地調査は3〜4LDKの住宅で2人が半日、という基準値を提示。ただし短縮後の数値も精度も記載なし","url":"https://www.reform-online.jp/news/distribution/67556.php"},
+{"product":"3D→2D変換そのもの","finding":"LiDARで計測した3Dモデルから現場でよく使う2D図面に直すのに手間がかかる、という課題認識。Scanat・りのべっち・Walk in home が自動2D機能を足した動機","url":"https://ken-it.world/it/2023/06/3d-scan-to-2d-drawing.html"},
+{"product":"HONEST GAP","finding":"手直しに何時間かかったか、自動出力がどれだけ外れていたかを数値で述べた独立した日本語の一次記録は、ゼロ件。数値を伴う主張はすべてベンダー発かベンダー近傍。この論点に関する日本の公開情報は事実上すべて宣伝","url":null}],
+
+"unread_leads":[
+{"name":"アルモニコス ClassNK PEERLESS 連載 第6回 iPhone/iPad点群 vs TLS比較","url":"https://www.armonicos.co.jp/cp_blog/18/","why":"iPhone対TLSの明示的な比較連載。実数値が載っている可能性が最も高い"},
+{"name":"モバイルスキャン協会 モバイル端末スキャンマニュアル","url":"https://ken-it.world/it/2022/06/mobile-scan-manual-released.html","why":"無料・団体発行で、精度と歩き方を扱っている"},
+{"name":"A Semantic Scan-to-IFC Pipeline（Buildings 16(15) 3036）","url":"https://www.mdpi.com/2075-5309/16/15/3036","why":"RoomPlan JSON→IFC 4x3。査読誌で寸法誤差が載っている可能性"},
+{"name":"Elsafty & Hartmann, Evaluating Automated Floorplan Generation（ICCCBE 2024）","url":"https://depositonce.tu-berlin.de/bitstreams/52d5f0f1-38d9-4cd3-8d1c-76e0ab142378/download","why":"住宅を対象にした自動間取り生成のベンチマーク"}]
+}
