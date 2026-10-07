@@ -2,7 +2,7 @@
 """VADO共通 時間認識モジュール（日本標準時 Asia/Tokyo）。
 
 用途: Claude Code の SessionStart / UserPromptSubmit Hook から呼ぶ。
-      どのAI社員（バトー、ミルカ等）でも同じ1本を使う。外部サービス・追加パッケージ不要（標準ライブラリのみ）。
+      どのAI社員（バトー、ミルカ、シオリ等）でも同じ1本を使う。外部サービス・追加パッケージ不要（標準ライブラリのみ）。
 
 使い方:
   now_jst.py hook SessionStart      -> Hook用JSON（additionalContext）を出力
@@ -50,8 +50,8 @@ def build_text() -> str:
         "- 日付・曜日・時刻はこの値を使い、推測しない。\n"
         "- 本日の予定はGoogleカレンダーで確認し、締切・残務を時間軸で優先順位づけする。\n"
         "- 日付が変わったことを理由に、未完了の業務を完了扱いしない。\n"
-        "- バトー自身の作業完了と、府川さんの業務終了は別。時刻だけで「今日は終了」と判断しない。\n"
-        "  業務終了は府川さんが伝えたときだけ扱い、その場合に未完了業務と翌日の引き継ぎを整理する。"
+        "- AI社員自身の作業完了と、社長の業務終了は別。時刻だけで「今日は終了」と判断しない。\n"
+        "  業務終了は社長が伝えたときだけ扱い、その場合に未完了業務と翌日の引き継ぎを整理する。"
     )
 
 
@@ -63,9 +63,13 @@ def main() -> int:
         json.dump(
             {"hookSpecificOutput": {"hookEventName": event, "additionalContext": text}},
             sys.stdout,
-            ensure_ascii=False,
+            ensure_ascii=True,  # Windows(cp932)でも文字化け・出力失敗しない
         )
     else:
+        try:
+            sys.stdout.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
         print(text)
     return 0
 
